@@ -289,7 +289,7 @@ button {
   font-size: 17px;
   cursor: pointer;
   box-shadow: 0px 4px 4px 0 rgba(95, 179, 221, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 button:hover {
@@ -300,8 +300,9 @@ a.green {
   color: #11a79d;
   font-family: "Futura Medium";
   padding-bottom: 3px;
+  transition-property: border;
   border-bottom: 2px solid #fff;
-  transition: border-bottom 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 a.blue {
@@ -309,7 +310,8 @@ a.blue {
   font-family: "Futura Medium";
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;
-  transition: border-bottom 0.3s ease-in-out;
+  transition-property: border;
+  transition: 0.3s ease-in-out;
 }
 
 a.blue:hover {

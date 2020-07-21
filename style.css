@@ -260,7 +260,6 @@ footer div,
 footer div a {
   display: flex;
   align-items: center;
-  transition: all 0.3s ease-in-out;
 }
 
 footer div a:not(:first-child) {
@@ -269,7 +268,6 @@ footer div a:not(:first-child) {
 
 footer div a img {
   margin-right: 10px;
-  transition: all 0.3s ease-in-out;
 }
 
 footer div a:hover {

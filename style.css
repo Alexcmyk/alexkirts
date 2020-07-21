@@ -204,7 +204,7 @@ header nav a {
   letter-spacing: 3px;
   padding-bottom: 5px;
   border-bottom: 2px solid #fff;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 header nav a.selected {

@@ -387,7 +387,7 @@ textarea:focus {
 @media (max-width: 750px) {
   section.main h1,
   section.contact h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   section.main p {
@@ -395,7 +395,7 @@ textarea:focus {
   }
 
   section.main {
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 12;
     margin-bottom: -80px;
   }
 

@@ -300,9 +300,8 @@ a.green {
   color: #11a79d;
   font-family: "Futura Medium";
   padding-bottom: 3px;
-  transition-property: border;
   border-bottom: 2px solid #fff;
-  transition: 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 a.blue {
@@ -310,8 +309,7 @@ a.blue {
   font-family: "Futura Medium";
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;
-  transition-property: border;
-  transition: 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 a.blue:hover {

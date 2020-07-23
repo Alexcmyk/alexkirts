@@ -297,7 +297,7 @@ button:hover {
 }
 
 a.green {
-  color: #11a79d;
+  color: #0a8078;
   font-family: "Futura Medium";
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;
@@ -305,7 +305,7 @@ a.green {
 }
 
 a.blue {
-  color: #2f7db5;
+  color: #1b5c8b;
   font-family: "Futura Medium";
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;
@@ -313,11 +313,11 @@ a.blue {
 }
 
 a.blue:hover {
-  border-bottom: 2px solid #2f7db5;
+  border-bottom: 2px solid #1b5c8b;
 }
 
 a.green:hover {
-  border-bottom: 2px solid #11a79d;
+  border-bottom: 2px solid #0a8078;
 }
 
 /* Contact */

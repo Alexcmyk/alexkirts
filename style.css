@@ -217,6 +217,22 @@ i {
   font-size: 16px;
 }
 
+.button-main {
+  display: inline-block;
+  font-family: "Futura Medium";
+  color: #fff;
+  font-size: 15px;
+  background: linear-gradient(
+    to left,
+    rgb(141, 52, 183) 0%,
+    rgb(228, 106, 187) 100%
+  );
+  padding: 20px 35px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 10px rgba(50, 20, 139, 0.25);
+  margin-top: 30px;
+}
+
 /* End of globals */
 
 header {
@@ -240,51 +256,6 @@ header nav a {
   transition: border 0.3s ease-in-out;
 }
 
-/* Unique hover states for each link */
-
-header nav a:first-child:hover {
-  border-bottom: 2px solid #edc356;
-}
-
-header nav a:nth-child(2):hover {
-  border-bottom: 2px solid #1cc7bc;
-}
-
-header nav a:nth-child(3):hover {
-  border-bottom: 2px solid #c71cc0;
-}
-
-header nav a:last-child:hover {
-  border-bottom: 2px solid #c06649;
-}
-
-.hero-footer .hero-footer-social a:first-child:hover {
-  color: #2867b2;
-}
-
-.hero-footer .hero-footer-social a:nth-child(2):hover {
-  color: #ea4c89;
-}
-
-.hero-footer .hero-footer-social a:nth-child(3):hover {
-  color: #1b7434;
-}
-
-.hero-footer .hero-footer-social a:last-child:hover {
-  background: linear-gradient(
-      to left,
-      rgb(0, 0, 0) 0%,
-      rgb(240, 237, 106) 35%,
-      rgb(221, 38, 151) 55%,
-      rgb(95, 200, 241) 100%
-    )
-    left bottom #fff no-repeat;
-  background-size: 100% 2px;
-  padding-bottom: 4px;
-}
-
-/* End of unique hover states */
-
 section.hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -300,7 +271,7 @@ section.hero .hello {
 
 section.hero .hero-copy {
   grid-column: 1 / span 7;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 section.hero .hero-copy p {
@@ -352,4 +323,47 @@ section.hero .hero-footer div a {
   padding-bottom: 4px;
 }
 
-/* end of header / hero */
+/* Unique hover states for each link */
+
+header nav a:first-child:hover {
+  border-bottom: 2px solid #edc356;
+}
+
+header nav a:nth-child(2):hover {
+  border-bottom: 2px solid #1cc7bc;
+}
+
+header nav a:nth-child(3):hover {
+  border-bottom: 2px solid #c71cc0;
+}
+
+header nav a:last-child:hover {
+  border-bottom: 2px solid #c06649;
+}
+
+.hero-footer .hero-footer-social a:first-child:hover {
+  color: #2867b2;
+}
+
+.hero-footer .hero-footer-social a:nth-child(2):hover {
+  color: #ea4c89;
+}
+
+.hero-footer .hero-footer-social a:nth-child(3):hover {
+  color: #1b7434;
+}
+
+.hero-footer .hero-footer-social a:last-child:hover {
+  background: linear-gradient(
+      to left,
+      rgb(0, 0, 0) 0%,
+      rgb(240, 237, 106) 35%,
+      rgb(221, 38, 151) 55%,
+      rgb(95, 200, 241) 100%
+    )
+    left bottom #fff no-repeat;
+  background-size: 100% 2px;
+  padding-bottom: 4px;
+}
+
+/* End of unique hover states end of header / hero  */

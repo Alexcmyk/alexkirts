@@ -213,6 +213,10 @@ section {
   margin-bottom: 100px;
 }
 
+i {
+  font-size: 16px;
+}
+
 /* End of globals */
 
 header {
@@ -259,15 +263,11 @@ header nav a:last-child:hover {
 }
 
 .hero-footer .hero-footer-social a:nth-child(2):hover {
-  color: #1da1f2;
+  color: #ea4c89;
 }
 
 .hero-footer .hero-footer-social a:nth-child(3):hover {
   color: #2ea44f;
-}
-
-.hero-footer .hero-footer-social a:last-child:hover {
-  background-color: ;
 }
 
 /* End of unique hover states */
@@ -275,7 +275,7 @@ header nav a:last-child:hover {
 section.hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 section.hero .hello {
@@ -303,7 +303,7 @@ section.hero img {
 section.hero .hero-footer {
   font-size: 12px;
   margin-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   grid-column: 1 / span 12;
@@ -313,7 +313,7 @@ section.hero .hero-footer .hero-footer-copy {
   text-transform: uppercase;
   font-family: "Futura Medium";
   max-width: 300px;
-  color: #a5a5a5;
+  color: #727272;
   font-size: 11px;
 }
 

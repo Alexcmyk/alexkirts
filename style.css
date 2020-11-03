@@ -254,6 +254,24 @@ header nav a:last-child:hover {
   border-bottom: 2px solid #c06649;
 }
 
+.hero-footer .hero-footer-social a:first-child:hover {
+  color: #2867b2;
+}
+
+.hero-footer .hero-footer-social a:nth-child(2):hover {
+  color: #1da1f2;
+}
+
+.hero-footer .hero-footer-social a:nth-child(3):hover {
+  color: #2ea44f;
+}
+
+.hero-footer .hero-footer-social a:last-child:hover {
+  background-color: ;
+}
+
+/* End of unique hover states */
+
 section.hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -302,7 +320,7 @@ section.hero .hero-footer .hero-footer-copy {
 section.hero .hero-footer .hero-footer-social a {
   margin-left: 50px;
   font-family: "Futura Medium";
-  transition: opacity 0.1s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 section.hero .hero-footer .hero-footer-social p {
@@ -314,10 +332,6 @@ section.hero .hero-footer div a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero-footer .hero-footer-social a:hover {
-  opacity: 0.7;
 }
 
 /* end of header / hero */

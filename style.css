@@ -228,6 +228,11 @@ i {
   font-size: 16px;
 }
 
+.medium {
+  font-family: "Futura Medium";
+  color: #383838;
+}
+
 .button-main {
   display: inline-block;
   font-family: "Futura Medium";
@@ -286,7 +291,6 @@ section.hero .hero-copy {
 }
 
 section.hero .hero-copy p {
-  max-width: 550px;
   font-size: 17px;
   margin-top: 20px;
 }

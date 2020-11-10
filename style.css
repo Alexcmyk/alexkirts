@@ -152,7 +152,9 @@ select {
   font: inherit;
 }
 
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -161,6 +163,15 @@ select {
 }
 
 /* End of reset */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Globals */
 
@@ -275,30 +286,39 @@ section.hero .hero-copy {
 }
 
 section.hero .hero-copy p {
-  max-width: 570px;
-  font-size: 23px;
+  max-width: 550px;
+  font-size: 17px;
   margin-top: 20px;
 }
 
-section.hero img {
+section.hero div.slides {
   grid-column: 9 / span 4;
+  height: 473px;
+  position: relative;
+}
+
+section.hero div.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+section.hero div.slides:hover img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+section.hero div.slides img:first-child {
+  z-index: 1;
 }
 
 section.hero .hero-footer {
   font-size: 12px;
   margin-bottom: 30px;
-  margin-top: 70px;
+  margin-top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   grid-column: 1 / span 12;
-}
-
-section.hero .hero-footer .hero-footer-copy {
-  text-transform: uppercase;
-  font-family: "Futura Medium";
-  max-width: 300px;
-  color: #727272;
-  font-size: 11px;
 }
 
 section.hero .hero-footer .hero-footer-social a {
@@ -351,19 +371,6 @@ header nav a:last-child:hover {
 
 .hero-footer .hero-footer-social a:nth-child(3):hover {
   color: #1b7434;
-}
-
-.hero-footer .hero-footer-social a:last-child:hover {
-  background: linear-gradient(
-      to left,
-      rgb(0, 0, 0) 0%,
-      rgb(240, 237, 106) 35%,
-      rgb(221, 38, 151) 55%,
-      rgb(95, 200, 241) 100%
-    )
-    left bottom #fff no-repeat;
-  background-size: 100% 2px;
-  padding-bottom: 4px;
 }
 
 /* End of unique hover states end of header / hero  */

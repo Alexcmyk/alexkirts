@@ -392,3 +392,11 @@ header .logo:hover {
 }
 
 /* End of unique hover states end of header / hero  */
+
+#scroll {
+  background-color: #7dc8ff;
+  height: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

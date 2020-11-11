@@ -251,6 +251,12 @@ i {
 
 /* End of globals */
 
+.background {
+  background-image: url(./imgs/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -261,6 +267,9 @@ header {
 
 header .logo {
   margin-top: -11px;
+  opacity: 0.6;
+  width: 20px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 header nav a {
@@ -269,7 +278,7 @@ header nav a {
   text-transform: uppercase;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
-  transition: border 0.3s ease-in-out;
+  transition: border 0.1s ease-in-out;
 }
 
 section.hero {
@@ -291,8 +300,9 @@ section.hero .hero-copy {
 }
 
 section.hero .hero-copy p {
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 20px;
+  line-height: 1.75;
 }
 
 section.hero div.slides {
@@ -363,6 +373,10 @@ header nav a:nth-child(3):hover {
 
 header nav a:last-child:hover {
   border-bottom: 2px solid #c06649;
+}
+
+header .logo:hover {
+  opacity: 1;
 }
 
 .hero-footer .hero-footer-social a:first-child:hover {

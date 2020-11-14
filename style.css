@@ -266,9 +266,11 @@ header {
 }
 
 header .logo {
-  margin-top: -11px;
-  opacity: 0.6;
-  width: 20px;
+  /* margin-top: -11px; */
+  opacity: 0.7;
+  /* width: 20px; */
+  font-family: "Futura Medium";
+  letter-spacing: 0;
   transition: opacity 0.3s ease-in-out;
 }
 

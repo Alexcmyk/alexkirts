@@ -249,6 +249,10 @@ i {
   margin-top: 30px;
 }
 
+#scroll {
+  z-index: 100;
+}
+
 /* End of globals */
 
 .background {
@@ -302,7 +306,7 @@ section.hero .hero-copy {
 }
 
 section.hero .hero-copy p {
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 20px;
   line-height: 1.75;
 }

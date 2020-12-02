@@ -176,7 +176,7 @@ select {
 /* Globals */
 
 body {
-  font-family: "Futura Light";
+  font-family: "Futura Light", Helvetica, sans-serif;
   font-size: 18px;
   color: #2f2f2f;
   max-width: 1100px;
@@ -188,7 +188,7 @@ body {
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 37px;
+  font-size: 33.5px;
 }
 
 a {
@@ -228,10 +228,10 @@ i {
   font-size: 16px;
 }
 
-.medium {
+/* .medium {
   font-family: "Futura Medium";
   color: #383838;
-}
+} */
 
 .button-main {
   display: inline-block;
@@ -259,6 +259,7 @@ i {
   background-image: url(./imgs/logo.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left -100px;
 }
 
 header {
@@ -271,7 +272,7 @@ header {
 
 header .logo {
   /* margin-top: -11px; */
-  opacity: 0.7;
+  opacity: 0.5;
   /* width: 20px; */
   font-family: "Futura Medium";
   letter-spacing: 0;
@@ -295,6 +296,7 @@ section.hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 50px;
+  gap: 20px;
 }
 
 section.hero .hello {
@@ -305,14 +307,14 @@ section.hero .hello {
 }
 
 section.hero .hero-copy {
-  grid-column: 1 / span 7;
+  grid-column: 1 / 8;
   margin-top: 60px;
 }
 
 section.hero .hero-copy p {
-  font-size: 16px;
+  font-size: 19px;
   margin-top: 20px;
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
 section.hero div.slides {

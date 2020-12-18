@@ -245,6 +245,13 @@ section.main p {
   margin-top: 30px;
 }
 
+section.main p.maintenance {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8b8b8b;
+  margin-top: 50px;
+}
+
 footer {
   margin-bottom: 30px;
   margin-top: 10px;

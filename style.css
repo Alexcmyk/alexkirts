@@ -250,6 +250,7 @@ section.main p.maintenance {
   font-weight: 700;
   color: #8b8b8b;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -466,5 +467,9 @@ textarea:focus {
   section.main img.main_image {
     height: 50px;
     margin-left: 0;
+  }
+
+  footer {
+    padding-bottom: 30px;
   }
 }

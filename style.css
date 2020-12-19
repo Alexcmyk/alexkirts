@@ -460,6 +460,7 @@ textarea:focus {
   section.main {
     grid-column: 1 / span 12;
     margin-top: -20px;
+    margin-bottom: 0;
   }
 
   section.main img.main_image {

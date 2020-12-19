@@ -336,7 +336,7 @@ section.contact {
   grid-column: 1 / span 5;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 116px);
+  /* height: calc(100vh - 116px); */
   padding-top: 40px;
 }
 

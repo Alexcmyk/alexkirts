@@ -427,7 +427,7 @@ textarea:focus {
   }
 
   section.contact {
-    grid-column: 1 / span 10;
+    grid-column: span 12;
     height: 100%;
   }
 

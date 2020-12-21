@@ -259,6 +259,27 @@ section.main p.maintenance {
   margin-bottom: 30px;
 }
 
+div.highlight-content {
+  position: relative;
+}
+
+div.highlight {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 0;
+    height: 13px;
+    background-color: #b9e8ff40;
+    z-index: -2;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.highlight-content:hover div.highlight {
+  width: 435px;
+}
+
+
 footer {
   margin-bottom: 30px;
   margin-top: 10px;
@@ -417,6 +438,11 @@ textarea:focus {
     grid-column: 1 / span 12;
     margin-bottom: -80px;
   }
+
+  div.highlight-content:hover div.highlight {
+    width: 0;
+  }
+
 
   footer {
     font-size: 12px;

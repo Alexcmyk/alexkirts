@@ -1,11 +1,11 @@
-const slideArea = document.querySelector("div.slides");
-const images = slideArea.querySelectorAll("img");
+const slideArea = document.querySelector('div.slides');
+const images = slideArea.querySelectorAll('img');
 
 let currentSlide = 0;
 let z = 1;
 
 // Slide event listener
-slideArea.addEventListener("click", () => {
+slideArea.addEventListener('click', () => {
   currentSlide += 1;
 
   if (currentSlide > images.length - 1) {
@@ -16,15 +16,15 @@ slideArea.addEventListener("click", () => {
 
   //   Removes animation from other images
   images.forEach((image) => {
-    image.style.animation = "";
+    image.style.animation = '';
   });
 
   //   z index and animation
   images[currentSlide].style.zIndex = z;
-  images[currentSlide].style.animation = "fade 0.5s";
+  images[currentSlide].style.animation = 'fade 0.5s';
 });
 
-slideArea.addEventListener("mouseover", () => {
+slideArea.addEventListener('mouseover', () => {
   images.forEach((image) => {
     const x = 25 * Math.floor(Math.random() * 5) - 50;
     const y = 25 * Math.floor(Math.random() * 5) - 50;
@@ -33,8 +33,8 @@ slideArea.addEventListener("mouseover", () => {
   });
 });
 
-slideArea.addEventListener("mouseout", () => {
+slideArea.addEventListener('mouseout', () => {
   images.forEach((image) => {
-    image.style.transform = "";
+    image.style.transform = '';
   });
 });

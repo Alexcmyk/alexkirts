@@ -13,7 +13,7 @@
     <meta name="description" content="Alex Kirts | Graphic Designer, UI Designer & Front-End Developer living in Denver, CO." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -24,55 +24,57 @@
   </head>
   <body class="background">
     <div id="scroll"></div>
-    <header>
-      <div class="logo">
-        <a href="index.html">a.kirts</a>
-      </div>
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="hello">&#x1f44b; Hello there.</div>
-        <h1>I’m Alex, a multimedia designer &amp; developer living in Denver, CO.</h1>
-        <p>
-          <span class="medium"> I specialize in graphic design, web / ui design and front-end development.</span>
-          Check out some of
-          <a href="./alexkirts_portfolio_sm.pdf" class="blue">my work</a>, or <a href="#" class="green">contact me</a> if you’re interested in working
-          together.
-        </p>
-      </div>
-      <div class="slides">
-        <img src="./imgs/place-holder.png" alt="" />
-        <img src="./imgs/img_2.png" alt="" />
-        <img src="./imgs/img_3.png" alt="" />
-        <img src="./imgs/img_4.png" alt="" />
-      </div>
-      <div class="hero-footer">
-        <div class="hero-footer-social">
-          <a href="https://www.linkedin.com/in/alexanderkirts/" target="_blank">
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-            <p>Linkedin</p>
-          </a>
-          <a href="https://dribbble.com/alexcmyk" target="_blank">
-            <i aria-hidden="true" class="fab fa-dribbble-square"></i>
-            <p>Dribbble</p>
-          </a>
-          <a href="https://github.com/Alexcmyk" target="_blank">
-            <i aria-hidden="true" class="fab fa-github"></i>
-            <p>Github</p>
-          </a>
-          <a href="#" target="_blank">
-            <img src="./imgs/CMYK.svg" alt="CMYK logo" />
-          </a>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html">a.kirts</a>
         </div>
-      </div>
-    </section>
-    <script src="./slides.js"></script>
-    <script src="./scroll.js"></script>
+        <nav>
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Resume</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="hello">&#x1f44b; Hello there.</div>
+          <h1>I’m Alex, a multimedia designer &amp; developer living in Denver, CO.</h1>
+          <p>
+            <span> I specialize in graphic design, web / ui design and front-end development.</span>
+            Check out some of
+            <a href="./dist/imgs/alexkirts_portfolio_sm.pdf" class="blue">my work</a>, or <a href="#" class="green">contact me</a> if you’re
+            interested in working together.
+          </p>
+        </div>
+        <div class="slides">
+          <img src="./dist/imgs/place-holder.png" alt="" />
+          <img src="./dist/imgs/img_2.png" alt="" />
+          <img src="./dist/imgs/img_3.png" alt="" />
+          <img src="./dist/imgs/img_4.png" alt="" />
+        </div>
+        <div class="hero-footer">
+          <div class="hero-footer-social">
+            <a href="https://www.linkedin.com/in/alexanderkirts/" target="_blank">
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+              <p>Linkedin</p>
+            </a>
+            <a href="https://dribbble.com/alexcmyk" target="_blank">
+              <i aria-hidden="true" class="fab fa-dribbble-square"></i>
+              <p>Dribbble</p>
+            </a>
+            <a href="https://github.com/Alexcmyk" target="_blank">
+              <i aria-hidden="true" class="fab fa-github"></i>
+              <p>Github</p>
+            </a>
+            <a href="#" target="_blank">
+              <img src="./dist/imgs/CMYK.svg" alt="CMYK logo" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <script src="./dist/js/slides.js"></script>
+      <script src="./dist/js/scroll.js"></script>
+    </div>
   </body>
 </html>

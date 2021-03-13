@@ -1,0 +1,55 @@
+/* Header -Partial */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header .logo {
+  /* margin-top: -11px; */
+  opacity: 0.5;
+  /* width: 20px; */
+  font-family: 'Futura Medium';
+  letter-spacing: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+header .logo:hover {
+  opacity: 1;
+}
+
+.logo a {
+  color: #56aded;
+}
+
+header nav a {
+  font-size: 13px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.1s ease-in-out;
+}
+
+/* Unique hover states for each link */
+
+header nav a:first-child:hover {
+  border-bottom: 2px solid #edc356;
+}
+
+header nav a:nth-child(2):hover {
+  border-bottom: 2px solid #1cc7bc;
+}
+
+header nav a:nth-child(3):hover {
+  border-bottom: 2px solid #c71cc0;
+}
+
+header nav a:last-child:hover {
+  border-bottom: 2px solid #c06649;
+}
+
+/* End of unique hover states end of header / hero  */

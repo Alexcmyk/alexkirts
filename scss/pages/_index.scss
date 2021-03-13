@@ -1,0 +1,92 @@
+/* Index -Page */
+
+.background {
+  background-image: url(../dist/imgs/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left -100px;
+}
+
+section.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 50px;
+  gap: 20px;
+}
+
+section.hero .hello {
+  text-transform: uppercase;
+  font-family: 'Futura Bold';
+  color: #56aded;
+  margin-bottom: 30px;
+}
+
+section.hero .hero-copy {
+  grid-column: 1 / 8;
+  margin-top: 60px;
+}
+
+section.hero .hero-copy p {
+  font-size: 19px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+section.hero div.slides {
+  grid-column: 9 / span 4;
+  height: 473px;
+  position: relative;
+}
+
+section.hero div.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+section.hero div.slides:hover img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+section.hero div.slides img:first-child {
+  z-index: 1;
+}
+
+section.hero .hero-footer {
+  font-size: 12px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1 / span 12;
+}
+
+section.hero .hero-footer .hero-footer-social a {
+  margin-left: 50px;
+  font-family: 'Futura Medium';
+  transition: color 0.2s ease-in;
+}
+
+section.hero .hero-footer .hero-footer-social p {
+  margin-left: 10px;
+}
+
+section.hero .hero-footer div,
+section.hero .hero-footer div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-footer .hero-footer-social a:first-child:hover {
+  color: #2867b2;
+}
+
+.hero-footer .hero-footer-social a:nth-child(2):hover {
+  color: #ea4c89;
+}
+
+.hero-footer .hero-footer-social a:nth-child(3):hover {
+  color: #1b7434;
+}

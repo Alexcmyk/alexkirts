@@ -1,0 +1,9 @@
+#hand-emoji {
+  display: inline-block;
+  text-align: center;
+  transform-origin: 50% 90%;
+  animation: wave 2.5s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  transition: transform 0.3s ease-in-out;
+}

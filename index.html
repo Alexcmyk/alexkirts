@@ -22,29 +22,37 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="background">
+  <body>
     <div id="scroll"></div>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <a href="index.html">a.kirts</a>
-        </div>
-        <nav>
-          <a href="#">About</a>
-          <a href="#">Work</a>
-          <a href="#">Resume</a>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
-      <section class="hero">
+    <div id="logo"></div>
+
+    <header class="container">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="./dist/imgs/script-logo.svg" alt="" />
+        </a>
+      </div>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-grid container">
         <div class="hero-copy">
-          <div class="hello">&#x1f44b; Hello there.</div>
+          <div class="hello">
+            <span id="hand-emoji">&#x1f44b;</span>
+            Hello there.
+          </div>
           <h1>I’m Alex, a multimedia designer &amp; developer living in Denver, CO.</h1>
           <p>
             <span> I specialize in graphic design, web / ui design and front-end development.</span>
             Check out some of
-            <a href="./dist/imgs/alexkirts_portfolio_sm.pdf" class="blue">my work</a>, or <a href="#" class="green">contact me</a> if you’re
-            interested in working together.
+            <a href="./dist/imgs/alexkirts_portfolio_sm.pdf" class="highlight-blue">my work</a>, or
+            <a href="#" class="highlight-green">contact me</a> if you’re interested in working together.
           </p>
         </div>
         <div class="slides">
@@ -68,13 +76,17 @@
               <p>Github</p>
             </a>
             <a href="#" target="_blank">
-              <img src="./dist/imgs/CMYK.svg" alt="CMYK logo" />
+              <img class="cmyk" src="./dist/imgs/CMYK.svg" alt="CMYK logo" />
             </a>
           </div>
         </div>
-      </section>
-      <script src="./dist/js/slides.js"></script>
-      <script src="./dist/js/scroll.js"></script>
-    </div>
+      </div>
+    </section>
+    <script>
+      '';
+
+    </script>
+    <script src="./dist/js/slides.js"></script>
+    <script src="./dist/js/scroll.js"></script>
   </body>
 </html>

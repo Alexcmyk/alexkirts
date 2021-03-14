@@ -1,3 +1,50 @@
 .highlight-drk {
-  font-family: "Futura Medium";
-  color: #383838;
+  font-family: 'Futura Medium';
+  color: $colorHighlightDrk;
+}
+
+.highlight-blue {
+  position: relative;
+  color: $colorHighlightBlue;
+  font-family: 'Futura Medium';
+  padding-bottom: 3px;
+}
+
+.highlight-blue::after {
+  content: '';
+  height: 120%;
+  width: 0;
+  top: -3px;
+  left: -5px;
+  position: absolute;
+  background-color: $colorHighlightBlueBackground;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.highlight-blue:hover::after {
+  width: 110%;
+}
+
+.highlight-green {
+  position: relative;
+  color: $colorHighlightGreen;
+  font-family: 'Futura Medium';
+  padding-bottom: 3px;
+}
+
+.highlight-green::after {
+  content: '';
+  height: 120%;
+  width: 0;
+  top: -3px;
+  left: -5px;
+  position: absolute;
+  background-color: $colorHighlightGreenBackground;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.highlight-green:hover::after {
+  width: 110%;
+}

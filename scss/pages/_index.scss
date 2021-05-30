@@ -90,17 +90,33 @@
             color: $colorGithub;
           }
 
+          &:last-child {
+            font-size: 12px;
+            font-family: 'Futura Bold';
+
+            span {
+              &:first-child {
+                color: #20aade;
+              }
+              &:nth-child(2) {
+                color: #de207b;
+              }
+              &:nth-child(3) {
+                color: #decb20;
+              }
+              &:last-child {
+                color: #000;
+              }
+            }
+          }
+
           &:last-child:hover {
             opacity: 0.6;
           }
 
-          .cmyk {
-            min-width: 50px;
+          p {
+            margin-left: 10px;
           }
-        }
-
-        p {
-          margin-left: 10px;
         }
       }
     }

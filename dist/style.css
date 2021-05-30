@@ -357,7 +357,7 @@ i {
 }
 
 .highlight-green:hover::after {
-  width: 110%;
+  width: 105%;
 }
 
 #hand-emoji {
@@ -565,15 +565,32 @@ header nav a:last-child:hover {
   color: #1b7434;
 }
 
+#hero .hero-grid .hero-footer .hero-footer-social a:last-child {
+  font-size: 12px;
+  font-family: 'Futura Bold';
+}
+
+#hero .hero-grid .hero-footer .hero-footer-social a:last-child span:first-child {
+  color: #20aade;
+}
+
+#hero .hero-grid .hero-footer .hero-footer-social a:last-child span:nth-child(2) {
+  color: #de207b;
+}
+
+#hero .hero-grid .hero-footer .hero-footer-social a:last-child span:nth-child(3) {
+  color: #decb20;
+}
+
+#hero .hero-grid .hero-footer .hero-footer-social a:last-child span:last-child {
+  color: #000;
+}
+
 #hero .hero-grid .hero-footer .hero-footer-social a:last-child:hover {
   opacity: 0.6;
 }
 
-#hero .hero-grid .hero-footer .hero-footer-social a .cmyk {
-  min-width: 50px;
-}
-
-#hero .hero-grid .hero-footer .hero-footer-social p {
+#hero .hero-grid .hero-footer .hero-footer-social a p {
   margin-left: 10px;
 }
 

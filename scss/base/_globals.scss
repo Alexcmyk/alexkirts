@@ -5,13 +5,18 @@ body {
   font-size: 18px;
   color: $colorBody;
   line-height: 1.5;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding: 0 30px 0 30px;
 }
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 33.5px;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
 }
 
 a {

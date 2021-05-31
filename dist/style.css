@@ -210,7 +210,6 @@ body {
   color: #2f2f2f;
   line-height: 1.5;
   letter-spacing: 1px;
-  padding: 0 30px 0 30px;
 }
 
 h1 {
@@ -243,6 +242,10 @@ i {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#mobile-nav.open {
+  transform: translate3d(0vw, 0, 0);
 }
 
 /* Components */
@@ -307,7 +310,7 @@ i {
 }
 
 .highlight-blue:hover::after {
-  width: 110%;
+  width: 109%;
 }
 
 .highlight-green {
@@ -330,7 +333,7 @@ i {
 }
 
 .highlight-green:hover::after {
-  width: 105%;
+  width: 109%;
 }
 
 #hand-emoji {
@@ -345,8 +348,10 @@ i {
 
 /* Grid -Partial */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* Header -Partial */
@@ -356,6 +361,7 @@ header {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 header .header-logo {
@@ -370,7 +376,13 @@ header .header-logo:hover {
   opacity: 1;
 }
 
-header nav a {
+@media (max-width: 700px) {
+  header #desktop-nav {
+    display: none;
+  }
+}
+
+header #desktop-nav a {
   font-size: 13px;
   margin-left: 50px;
   text-transform: uppercase;
@@ -380,20 +392,75 @@ header nav a {
   /* Unique hover states for each link */
 }
 
-header nav a:first-child:hover {
+header #desktop-nav a:first-child:hover {
   border-bottom: 2px solid #edc356;
 }
 
-header nav a:nth-child(2):hover {
+header #desktop-nav a:nth-child(2):hover {
   border-bottom: 2px solid #1cc7bc;
 }
 
-header nav a:nth-child(3):hover {
+header #desktop-nav a:nth-child(3):hover {
   border-bottom: 2px solid #c71cc0;
 }
 
-header nav a:last-child:hover {
+header #desktop-nav a:last-child:hover {
   border-bottom: 2px solid #c06649;
+}
+
+header .mobile-button {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 100;
+}
+
+@media (min-width: 699px) {
+  header .mobile-button {
+    display: none;
+  }
+}
+
+header .mobile-button span {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  transition: background-color 200ms ease-in-out;
+}
+
+header #mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #170636;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  gap: 40px;
+  transition: transform 300ms ease-in-out;
+  transform: translate3d(200vw, 0, 0);
+  overflow: scroll;
+}
+
+@media (min-width: 699px) {
+  header #mobile-nav {
+    display: none;
+  }
+}
+
+header #mobile-nav a {
+  color: #fff;
+  font-size: 32px;
 }
 
 /* Contact -Partial */
@@ -401,16 +468,14 @@ header nav a:last-child:hover {
 /* Index -Page */
 #logo {
   position: absolute;
+  z-index: -100;
   top: 0;
   left: 0;
-  z-index: -100;
-  background-image: url(../../dist/imgs/logo.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1700px;
   opacity: 0.4;
-  width: 100%;
-  height: 100%;
+}
+
+#logo img {
+  width: 2000px;
 }
 
 #hero {
@@ -423,8 +488,14 @@ header nav a:last-child:hover {
   margin-top: 50px;
 }
 
+@media (max-width: 1099px) {
+  #hero .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 #hero .hero-grid .hero-copy {
-  grid-column: 1 / 8;
+  grid-column: 1 / 7;
   margin-top: 60px;
 }
 
@@ -435,11 +506,36 @@ header nav a:last-child:hover {
   margin-bottom: 30px;
 }
 
+#hero .hero-grid .hero-copy h1 {
+  max-width: 40ch;
+}
+
 #hero .hero-grid .hero-copy p {
   font-size: 19px;
   margin-top: 20px;
   line-height: 1.6;
-  max-width: 540px;
+}
+
+@media (max-width: 1099px) {
+  #hero .hero-grid .hero-copy p {
+    max-width: 70ch;
+  }
+}
+
+#hero .hero-grid .hero-image {
+  grid-column: 1 / 12;
+}
+
+#hero .hero-grid .hero-image img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1099px) {
+  #hero .hero-grid .hero-image {
+    display: none;
+  }
 }
 
 #hero .hero-grid .slides {
@@ -448,11 +544,18 @@ header nav a:last-child:hover {
   position: relative;
 }
 
+@media (max-width: 1100px) {
+  #hero .hero-grid .slides {
+    display: none;
+  }
+}
+
 #hero .hero-grid .slides img {
   position: absolute;
   top: 0;
   left: 0;
   transition: transform 0.5s, box-shadow 0.5s;
+  width: 100%;
 }
 
 #hero .hero-grid .slides img:first-child {
@@ -469,6 +572,12 @@ header nav a:last-child:hover {
   justify-content: flex-start;
   grid-column: 1 / span 6;
   margin-top: -50px;
+}
+
+@media (max-width: 1100px) {
+  #hero .hero-grid .hero-footer {
+    margin-top: 50px;
+  }
 }
 
 #hero .hero-grid .hero-footer .hero-footer-social {

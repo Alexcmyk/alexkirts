@@ -24,7 +24,9 @@
   </head>
   <body>
     <div id="scroll"></div>
-    <!-- <div id="logo"></div> -->
+    <!-- <div id="logo">
+      <img src="./dist/imgs/logo.svg" alt="" />
+    </div> -->
 
     <header class="container">
       <div class="header-logo">
@@ -32,7 +34,19 @@
           <img src="./dist/imgs/script-logo.svg" alt="" />
         </a>
       </div>
-      <nav>
+      <nav id="desktop-nav">
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="mobile-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="mobile-nav">
+        <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Work</a>
         <a href="#">Resume</a>
@@ -42,6 +56,9 @@
 
     <section id="hero">
       <div class="hero-grid container">
+        <div class="hero-image">
+          <img src="./dist/imgs/hero-main.png" alt="" />
+        </div>
         <div class="hero-copy">
           <div class="hello">
             <span id="hand-emoji">&#x1f44b;</span>
@@ -49,7 +66,7 @@
           </div>
           <h1>I’m Alex, a multimedia designer &amp; developer living in Denver, CO.</h1>
           <p>
-            <span> I specialize in graphic design, web / ui design and front-end development.</span>
+            <span> I specialize in graphic design, ui/ux design and front-end development.</span>
             Check out some of
             <a href="./dist/imgs/alexkirts_portfolio_sm.pdf" class="highlight-blue">my work</a>, or
             <a href="#" class="highlight-green">contact me</a> if you’re interested in working together.
@@ -97,7 +114,7 @@
               like to see more work, check out my portfolio page.
             </p>
           </div>
-          <a class="button-main">My Portfolio</a>
+          <a class="button-main">See More Work</a>
         </div>
         <div class="work-grid">
           <div class="image group-pic">
@@ -175,5 +192,6 @@
     </script>
     <script src="./dist/js/slides.js"></script>
     <script src="./dist/js/scroll.js"></script>
+    <script src="./dist/js/menu.js"></script>
   </body>
 </html>

@@ -430,7 +430,7 @@ header .mobile-button span {
   display: inline-block;
   width: 30px;
   height: 3px;
-  background-color: #000;
+  background-color: #818181;
   transition: background-color 200ms ease-in-out;
   transition: all 0.2s ease-in-out;
 }
